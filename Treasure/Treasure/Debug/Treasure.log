@@ -1,19 +1,20 @@
 ﻿  main.c
-C:\Users\82107\source\Treasure\Treasure\Treasure\func.h(149,16): warning C4090: '함수': 'const' 한정자가 서로 다릅니다.
-C:\Users\82107\source\Treasure\Treasure\Treasure\func.h(149,26): warning C4090: '함수': 'const' 한정자가 서로 다릅니다.
-C:\Users\82107\source\Treasure\Treasure\Treasure\func.h(149,48): warning C4090: '함수': 'const' 한정자가 서로 다릅니다.
-C:\Users\82107\source\Treasure\Treasure\Treasure\func.h(164,17): warning C4090: '함수': 'const' 한정자가 서로 다릅니다.
-C:\Users\82107\source\Treasure\Treasure\Treasure\func.h(164,46): warning C4090: '함수': 'const' 한정자가 서로 다릅니다.
-C:\Users\82107\source\Treasure\Treasure\Treasure\func.h(167,10): warning C4090: '함수': 'const' 한정자가 서로 다릅니다.
-C:\Users\82107\source\Treasure\Treasure\Treasure\func.h(167,13): warning C4090: '함수': 'const' 한정자가 서로 다릅니다.
-C:\Users\82107\source\Treasure\Treasure\Treasure\func.h(170,31): warning C4090: '함수': 'const' 한정자가 서로 다릅니다.
-C:\Users\82107\source\Treasure\Treasure\Treasure\func.h(170,47): warning C4090: '함수': 'const' 한정자가 서로 다릅니다.
-C:\Users\82107\source\Treasure\Treasure\Treasure\func.h(170,50): warning C4090: '함수': 'const' 한정자가 서로 다릅니다.
-C:\Users\82107\source\Treasure\Treasure\Treasure\func.h(173,14): warning C4090: '함수': 'const' 한정자가 서로 다릅니다.
-C:\Users\82107\source\Treasure\Treasure\Treasure\func.h(254,18): warning C4090: '함수': 'const' 한정자가 서로 다릅니다.
-C:\Users\82107\source\Treasure\Treasure\Treasure\func.h(254,28): warning C4090: '함수': 'const' 한정자가 서로 다릅니다.
-C:\Users\82107\source\Treasure\Treasure\Treasure\func.h(254,50): warning C4090: '함수': 'const' 한정자가 서로 다릅니다.
-C:\Users\82107\source\Treasure\Treasure\Treasure\func.h(287,29): warning C4090: '함수': 'const' 한정자가 서로 다릅니다.
-C:\Users\82107\source\Treasure\Treasure\Treasure\func.h(287,39): warning C4090: '함수': 'const' 한정자가 서로 다릅니다.
+C:\Users\82107\source\Treasure\Treasure\Treasure\func.h(86,15): warning C4013: 'checkMap'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+C:\Users\82107\source\Treasure\Treasure\Treasure\func.h(186,16): warning C4090: '함수': 'const' 한정자가 서로 다릅니다.
+C:\Users\82107\source\Treasure\Treasure\Treasure\func.h(186,26): warning C4090: '함수': 'const' 한정자가 서로 다릅니다.
+C:\Users\82107\source\Treasure\Treasure\Treasure\func.h(186,48): warning C4090: '함수': 'const' 한정자가 서로 다릅니다.
+C:\Users\82107\source\Treasure\Treasure\Treasure\func.h(201,17): warning C4090: '함수': 'const' 한정자가 서로 다릅니다.
+C:\Users\82107\source\Treasure\Treasure\Treasure\func.h(201,46): warning C4090: '함수': 'const' 한정자가 서로 다릅니다.
+C:\Users\82107\source\Treasure\Treasure\Treasure\func.h(204,10): warning C4090: '함수': 'const' 한정자가 서로 다릅니다.
+C:\Users\82107\source\Treasure\Treasure\Treasure\func.h(204,13): warning C4090: '함수': 'const' 한정자가 서로 다릅니다.
+C:\Users\82107\source\Treasure\Treasure\Treasure\func.h(207,31): warning C4090: '함수': 'const' 한정자가 서로 다릅니다.
+C:\Users\82107\source\Treasure\Treasure\Treasure\func.h(207,47): warning C4090: '함수': 'const' 한정자가 서로 다릅니다.
+C:\Users\82107\source\Treasure\Treasure\Treasure\func.h(207,50): warning C4090: '함수': 'const' 한정자가 서로 다릅니다.
+C:\Users\82107\source\Treasure\Treasure\Treasure\func.h(210,14): warning C4090: '함수': 'const' 한정자가 서로 다릅니다.
+C:\Users\82107\source\Treasure\Treasure\Treasure\func.h(291,18): warning C4090: '함수': 'const' 한정자가 서로 다릅니다.
+C:\Users\82107\source\Treasure\Treasure\Treasure\func.h(291,28): warning C4090: '함수': 'const' 한정자가 서로 다릅니다.
+C:\Users\82107\source\Treasure\Treasure\Treasure\func.h(291,50): warning C4090: '함수': 'const' 한정자가 서로 다릅니다.
+C:\Users\82107\source\Treasure\Treasure\Treasure\func.h(324,29): warning C4090: '함수': 'const' 한정자가 서로 다릅니다.
+C:\Users\82107\source\Treasure\Treasure\Treasure\func.h(324,39): warning C4090: '함수': 'const' 한정자가 서로 다릅니다.
 C:\Users\82107\source\Treasure\Treasure\Treasure\main.c(6,18): warning C4244: '함수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   Treasure.vcxproj -> C:\Users\82107\source\Treasure\Treasure\Debug\Treasure.exe

@@ -13,7 +13,7 @@
 #define COL (50 + SCOL)		//맵 열 끝
 #define UE "◆"		//플레이어 모양
 #define FE "◀"		//깃발 모양
-#define HE "▶"		//힌트 깃발 모양
+#define HE "★"		//힌트 깃발 모양
 #define SX (ROW - 2)	//플레이어 시작 x
 #define SY (1 + SCOL)	//플레이어 시작 y
 #define M1X 20		//첫 번째 메뉴 x

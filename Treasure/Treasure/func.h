@@ -67,14 +67,51 @@ void create_map(int** map, int** flagInfo, int* flagCnt, int* treasureIdx, int o
 	//게임 시작 시 초기 설정 및 게임 시작
 
 	erase_console();
-	erase_map(map);
 
-	*treasureIdx = setMap(map, flagInfo, flagCnt, obsCnt, obsLeng);
-	//깃발, 장애물 생성, treasureIdx == flagInfo에서 보물의 index
-	make_side(map);
-	//맵 테두리 출력
+	int visit[ROW][COL];
+	
+	while (1) {
+		for (int i = 0; i < ROW; i++)
+		{
+			for (int j = 0; j < COL; j++)
+			{
+				visit[i][j] = 0;
+			}
+		}
+		erase_map(map);
+		*treasureIdx = setMap(map, flagInfo, flagCnt, obsCnt, obsLeng);
+		//깃발, 장애물 생성, treasureIdx == flagInfo에서 보물의 index
+		make_side(map);
+		//맵 테두리 생성
+		if (checkMap(map, visit, treasureIdx, SX, SY) == 1)
+			break;
+	}
+	
 	print_map(map, flagInfo, flagCnt);
 	//깃발, 장애물 출력
+}
+
+int checkMap(int** map, int visit[ROW][COL], int* treasureIdx, int x, int y) {
+	int mv1[4] = { 0, 0, 1, -1 };
+	int mv2[4] = { 2, -2, 0, 0 };
+	if (visit[x][y] == 1)	return 0;
+	visit[x][y] = 1;
+
+	if (map[x][y] == *treasureIdx) {
+		return 1;
+	}
+
+	for (int i = 0; i < 4; i++)
+	{
+		int nx = x + mv1[i];
+		int ny = y + mv2[i];
+
+		if (map[nx][ny] == -1 || map[nx][ny + 1] == -1)	continue;
+		
+		if (checkMap(map, visit, treasureIdx, nx, ny))
+			return 1;
+	}
+	return 0;
 }
 
 void print_info(const int* score, const int leftMove, const int level, int x, int y) {
@@ -105,7 +142,7 @@ void print_info(const int* score, const int leftMove, const int level, int x, in
 
 
 void flag1(int** flagInfo, const int* flagCnt, const int* treasureIdx, int* score, int cnt) {
-	//1번 깃발을 먹으면 보물 깃발을 포함한 3,5,7개의 깃발의 방향이 바뀐다.(한 번만 사용 가능), 다시 사용 시 50%확률로 점수가 2배 or 1/2배
+	//1번 깃발을 먹으면 보물 깃발을 포함한 3,5,7개의 깃발의 모양이 바뀐다.(한 번만 사용 가능), 다시 사용 시 50%확률로 점수가 2배 or 1/2배
 	if (flagInfo[*treasureIdx][3] == 2) {
 		if (rand() % 2 == 0) {
 			*score *= 2;
@@ -138,8 +175,9 @@ void flag2(int* x, int* y) {
 	*y = SY;
 }
 
-void flag3(const int** map, const int** flagInfo, int* flagCnt, const int* treasureIdx, int* x, int* y, const int leftFlag, const int obsCnt, const int obsLeng) {
-	//3번 깃발을 남아있는 깃발, 장애물의 위치가 전부 바뀌고, 플레이어는 시작 지점으로 돌아간다.(단, 이동횟수는 그대로)
+void flag3(const int** map, const int** flagInfo, int* flagCnt, const int* treasureIdx, 
+	int* x, int* y, const int leftFlag, const int obsCnt, const int obsLeng) {
+	//3번 깃발을 멱으면 남아있는 깃발, 장애물의 위치가 전부 바뀌고, 플레이어는 시작 지점으로 돌아간다.(단, 이동횟수는 그대로)
 
 	*x = SX;
 	*y = SY;
