@@ -18,8 +18,8 @@ C:\Users\82107\source\Treasure\Treasure\Treasure\func.h(325,29): warning C4090: 
 C:\Users\82107\source\Treasure\Treasure\Treasure\func.h(325,39): warning C4090: '함수': 'const' 한정자가 서로 다릅니다.
 C:\Users\82107\source\Treasure\Treasure\Treasure\main.c(6,18): warning C4244: '함수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   코드를 생성하고 있습니다.
-  3 of 34 functions ( 8.8%) were compiled, the rest were copied from previous compilation.
+  1 of 34 functions ( 2.9%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    14 functions had inline decision re-evaluated but remain unchanged
+    1 functions had inline decision re-evaluated but remain unchanged
   코드를 생성했습니다.
   Treasure.vcxproj -> C:\Users\82107\source\Treasure\Treasure\Release\Treasure.exe

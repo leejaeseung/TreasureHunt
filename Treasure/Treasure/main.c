@@ -20,6 +20,7 @@ int main(void) {
 		print_menu();
 		gotoxy(31, 50);
 		printf("High Score : %d", max(highScore, score));
+		highScore = score;
 		lv = choose_menu(menu_pos);
 
 		score = 0;
