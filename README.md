@@ -1,4 +1,4 @@
-# Minesweeper
+# TreasureHunt
 
 # C언어로 구현한 보물 찾기 게임입니다.
 
