@@ -8,3 +8,4 @@
 
 ![메인 화면](https://user-images.githubusercontent.com/23518329/88159356-280eed80-cc48-11ea-8fd9-7b46fd8ca029.PNG)
 
+![image](https://user-images.githubusercontent.com/23518329/88159672-9358bf80-cc48-11ea-80e1-8be91930a3d3.png)![image](https://user-images.githubusercontent.com/23518329/88159719-a8355300-cc48-11ea-8b5b-69374d2646bb.png)
